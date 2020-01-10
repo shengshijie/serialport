@@ -43,6 +43,7 @@ class SerialPort {
         }
         fileOutputStream = FileOutputStream(mFd!!)
         fileInputStream = FileInputStream(mFd!!)
+        result("")
     }
 
     fun send(bytes: ByteArray) {
